@@ -1,0 +1,9 @@
+# Problem  : Duplicate Emails
+# Difficulty: Easy
+# Tags     : Database
+# URL      : https://leetcode.com/problems/duplicate-emails/
+# Solved on: 2026-04-07 20:57
+# ──────────────────────────────────────────────────
+
+# Write your MySQL query statement below
+select email as Email from Person group by email having count(email)>1;
