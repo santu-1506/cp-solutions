@@ -1,0 +1,11 @@
+# Problem  : Rank Scores
+# Difficulty: Medium
+# Tags     : Database
+# URL      : https://leetcode.com/problems/rank-scores/
+# Solved on: 2026-04-07 20:47
+# ──────────────────────────────────────────────────
+
+# Write your MySQL query statement below
+select score , dense_rank() over (
+    order by score desc
+) as 'rank' from scores
