@@ -1,0 +1,10 @@
+# Problem  : Find Customer Referee
+# Difficulty: Easy
+# Tags     : Database
+# URL      : https://leetcode.com/problems/find-customer-referee/
+# Solved on: 2026-04-07 21:23
+# ──────────────────────────────────────────────────
+
+SELECT name
+FROM Customer
+WHERE referee_id != 2 OR referee_id IS NULL;
